@@ -12,7 +12,7 @@ class GetList extends Component {
   }
   componentDidMount() {
     axios
-      .get('https://jsonplaceholder.typicode.com/post')
+      .get('https://jsonplaceholder.typicode.com/posts')
       .then((responce) => {
         this.setState({
           get: responce.data,
